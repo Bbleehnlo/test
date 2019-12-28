@@ -10,9 +10,20 @@
 
   gtag('config', 'UA-154917950-1');
 </script>
+<script>
+function send(){
+  gtag("event", "watch video", {
+	"event_category": "video on homepage",
+	"event_label": "promotion",
+  "value": 5
+  });
+  alert("event is confirmed");
+}
+</script>
 </head>
 <body>
   <h3>Website for GA</h3>
   <div>Hello Google Analytics</div>
+  <button onclick="send();">click me</button>
 </body>
 </html>
